@@ -33,3 +33,9 @@ flutter:
   #       - asset: fonts/Nunito-Regular.ttf
   #       - asset: fonts/Nunito-Bold.ttf
   #         weight: 700
+flutter:
+  assets:
+    - assets/images/ph_up.png
+    - assets/images/ph_down.png
+    - assets/images/clarificante.png
+    - assets/images/algicida.png
