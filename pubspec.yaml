@@ -1,1 +1,32 @@
 
+name: aquacleanapp
+description: "Agua Cristalina Siempre - AquaClean app creada por Stephen Arlen"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.6.0
+  google_sign_in: ^6.1.0
+  flutter_facebook_auth: ^7.1.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  # fonts:
+  #   - family: Nunito
+  #     fonts:
+  #       - asset: fonts/Nunito-Regular.ttf
+  #       - asset: fonts/Nunito-Bold.ttf
+  #         weight: 700
