@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.patriciacor.aquastore'
+    namespace 'com.patriciacor.aquaclean'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.patriciacor.aquastore"
+    applicationId "com.patriciacor.aquaclean"
         minSdk 21
         targetSdk 33
         versionCode 1

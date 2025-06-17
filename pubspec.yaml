@@ -1,6 +1,6 @@
 name: aquacleanapp
 description: "Agua Cristalina Siempre - AquaClean app creada por Patricia Cor y Stephen Arlen"
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -16,12 +16,12 @@ dependencies:
   flutter_facebook_auth: ^7.1.2
   intl: ^0.20.2
   provider: ^6.0.5
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
 
 flutter:
   uses-material-design: true
@@ -32,8 +32,8 @@ flutter:
   #       - asset: fonts/Nunito-Bold.ttf
   #         weight: 700
 
-  assets:
-    - assets/images/ph_up.png
-    - assets/images/ph_down.png
-    - assets/images/clarificante.png
-    - assets/images/algicida.png
+  #assets:
+  #  - assets/images/ph_up.png
+  #-  assets/images/ph_down.png
+  #- assets/images/clarificante.png
+  #- assets/images/algicida.png

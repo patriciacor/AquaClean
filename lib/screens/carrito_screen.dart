@@ -22,9 +22,11 @@ class CarritoScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       final producto = carrito.productos[index];
                       return ListTile(
-                        leading: Image.asset(producto.imagen, width: 50, height: 50, fit: BoxFit.cover),
+                        leading: Image.asset(producto.imagen,
+                            width: 50, height: 50, fit: BoxFit.cover),
                         title: Text(producto.nombre),
-                        subtitle: Text('\$${producto.precio.toStringAsFixed(2)}'),
+                        subtitle:
+                            Text('\$${producto.precio.toStringAsFixed(2)}'),
                         trailing: IconButton(
                           icon: const Icon(Icons.delete),
                           onPressed: () {
@@ -39,7 +41,8 @@ class CarritoScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(16),
                   child: Text(
                     'Total: \$${carrito.total.toStringAsFixed(2)}',
-                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
                 ElevatedButton(
@@ -51,7 +54,9 @@ class CarritoScreen extends StatelessWidget {
                         title: const Text('Checkout'),
                         content: const Text('Funcionalidad de pago pendiente.'),
                         actions: [
-                          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cerrar')),
+                          TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text('Cerrar')),
                         ],
                       ),
                     );
@@ -64,4 +69,3 @@ class CarritoScreen extends StatelessWidget {
     );
   }
 }
-

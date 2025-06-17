@@ -31,7 +31,7 @@ class AquaCleanApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/tienda': (context) => const TiendaScreen(),
         '/carrito': (context) => const CarritoScreen(),
-        '/contacto': (context) => const ContactoTecnicoScreen(),
+        '/contacto': (_) => const ContactoTecnicoScreen(),
         '/calculadora': (context) => const CalculadoraScreen(),
       },
     );

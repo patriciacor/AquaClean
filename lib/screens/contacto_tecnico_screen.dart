@@ -24,7 +24,8 @@ class _ContactoTecnicoScreenState extends State<ContactoTecnicoScreen> {
         "Hola, soy $nombre. Mi número es $telefono. Quisiera contactar un técnico en la siguiente ubicación: $ubicacion.",
       );
 
-      final url = "https://wa.me/598XXXXXXXX?text=$mensaje"; // Reemplaza con número real
+      final url =
+          "https://wa.me/598099385953?text=$mensaje"; // reemplaza con tu número real
 
       if (await canLaunchUrl(Uri.parse(url))) {
         await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
@@ -59,13 +60,15 @@ class _ContactoTecnicoScreenState extends State<ContactoTecnicoScreen> {
             children: [
               _buildTextField(_nombreCtrl, "Nombre completo"),
               const SizedBox(height: 12),
-              _buildTextField(_telefonoCtrl, "Teléfono", tipo: TextInputType.phone),
+              _buildTextField(_telefonoCtrl, "Teléfono",
+                  tipo: TextInputType.phone),
               const SizedBox(height: 12),
-              _buildTextField(_ubicacionCtrl, "Ubicación (ciudad, barrio, etc)"),
+              _buildTextField(
+                  _ubicacionCtrl, "Ubicación (ciudad, barrio, etc)"),
               const SizedBox(height: 24),
               ElevatedButton.icon(
                 onPressed: _enviarPorWhatsApp,
-                icon: const Icon(Icons.whatsapp),
+                icon: Icon(Icons.phone),
                 label: const Text("Enviar por WhatsApp"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green.shade700,
