@@ -37,4 +37,3 @@ class AquaCleanApp extends StatelessWidget {
     );
   }
 }
-
