@@ -4,7 +4,7 @@ class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
   void _login(BuildContext context) {
-    // Aquí va la lógica de autenticación, luego navegar a HomeScreen
+    // TODO: agregar lógica de autenticación (Firebase, Google, FB)
     Navigator.pushReplacementNamed(context, '/home');
   }
 
@@ -21,4 +21,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
