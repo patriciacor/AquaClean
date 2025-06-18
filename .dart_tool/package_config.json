@@ -39,9 +39,9 @@
     },
     {
       "name": "facebook_auth_desktop",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/facebook_auth_desktop-2.1.1",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/facebook_auth_desktop-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "fake_async",
@@ -99,27 +99,27 @@
     },
     {
       "name": "flutter_facebook_auth",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth-7.1.2",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth-6.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_facebook_auth_platform_interface",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth_platform_interface-6.1.2",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth_platform_interface-5.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_facebook_auth_web",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth_web-6.1.2",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_facebook_auth_web-5.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_lints",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-4.0.0",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.3",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "2.19"
     },
     {
       "name": "flutter_secure_storage",
@@ -249,9 +249,9 @@
     },
     {
       "name": "lints",
-      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/lints-4.0.0",
+      "rootUri": "file:///C:/Users/Janet/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.0"
     },
     {
       "name": "matcher",

@@ -23,7 +23,7 @@
     },
     {
       "name": "flutter_lints",
-      "version": "4.0.0",
+      "version": "2.0.3",
       "dependencies": [
         "lints"
       ]
@@ -90,7 +90,7 @@
     },
     {
       "name": "flutter_facebook_auth",
-      "version": "7.1.2",
+      "version": "6.2.0",
       "dependencies": [
         "facebook_auth_desktop",
         "flutter",
@@ -145,7 +145,7 @@
     },
     {
       "name": "lints",
-      "version": "4.0.0",
+      "version": "2.1.1",
       "dependencies": []
     },
     {
@@ -373,7 +373,7 @@
     },
     {
       "name": "facebook_auth_desktop",
-      "version": "2.1.1",
+      "version": "1.0.3",
       "dependencies": [
         "flutter",
         "flutter_facebook_auth_platform_interface",
@@ -383,17 +383,17 @@
     },
     {
       "name": "flutter_facebook_auth_web",
-      "version": "6.1.2",
+      "version": "5.0.0",
       "dependencies": [
         "flutter",
         "flutter_facebook_auth_platform_interface",
         "flutter_web_plugins",
-        "web"
+        "js"
       ]
     },
     {
       "name": "flutter_facebook_auth_platform_interface",
-      "version": "6.1.2",
+      "version": "5.0.0",
       "dependencies": [
         "flutter",
         "plugin_platform_interface"
@@ -536,18 +536,18 @@
       ]
     },
     {
+      "name": "js",
+      "version": "0.6.7",
+      "dependencies": [
+        "meta"
+      ]
+    },
+    {
       "name": "google_identity_services_web",
       "version": "0.3.3+1",
       "dependencies": [
         "meta",
         "web"
-      ]
-    },
-    {
-      "name": "js",
-      "version": "0.6.7",
-      "dependencies": [
-        "meta"
       ]
     },
     {

@@ -53,10 +53,10 @@ packages:
     dependency: transitive
     description:
       name: facebook_auth_desktop
-      sha256: "219d559a33891e937c1913430505eae01fb946cb35729167bbdc747e3ebbd9ff"
+      sha256: e6cc4d6f50a1d67d99e7dac7d77a40fe27122496e224cb708ae168d7d9aac0ac
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -130,34 +130,34 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_facebook_auth
-      sha256: "902a98db4c7a24001a0835d592806c6a3d6b0c7fba2d169c11e20e14fdc74368"
+      sha256: bc455122d3ea14fd0887b1a0f74d0ead845c04bfc2e68c64d9a701367d665724
       url: "https://pub.dev"
     source: hosted
-    version: "7.1.2"
+    version: "6.2.0"
   flutter_facebook_auth_platform_interface:
     dependency: transitive
     description:
       name: flutter_facebook_auth_platform_interface
-      sha256: e04b8dbfa77702bea45a79993163ad5d20b2c0084109bec591fdc2b9ee505779
+      sha256: "86630c4dbba1c20fba26ea9e59ad0d48f5ff59e7373cacd36f916160186f9ce9"
       url: "https://pub.dev"
     source: hosted
-    version: "6.1.2"
+    version: "5.0.0"
   flutter_facebook_auth_web:
     dependency: transitive
     description:
       name: flutter_facebook_auth_web
-      sha256: f682400d61cf8d52dd8b6458b5ee106ed57e95309a117dc32875d3da129ce47c
+      sha256: "22dca8091409309ad85b9f430fbd8f57b686276979da5195e7e97587352567ce"
       url: "https://pub.dev"
     source: hosted
-    version: "6.1.2"
+    version: "5.0.0"
   flutter_lints:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: "3f41d009ba7172d5ff9be5f6e6e6abb4300e263aab8866d2a0842ed2a70f8f0c"
+      sha256: a25a15ebbdfc33ab1cd26c63a6ee519df92338a9c10f122adda92938253bef04
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0"
+    version: "2.0.3"
   flutter_secure_storage:
     dependency: transitive
     description:
@@ -324,10 +324,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: "976c774dd944a42e83e2467f4cc670daef7eed6295b10b36ae8c85bcbf828235"
+      sha256: "0a217c6c989d21039f1498c3ed9f3ed71b354e69873f13a8dfc3c9fe76f1b452"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0"
+    version: "2.1.1"
   matcher:
     dependency: transitive
     description:

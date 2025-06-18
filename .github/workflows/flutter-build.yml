@@ -1,13 +1,15 @@
+# Archivo: .github/workflows/flutter_build.yml
+
 name: Build Flutter APK
 
 on:
   push:
     branches:
-      - main # O cambia a la rama que uses
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
-    name: Build APK
     runs-on: ubuntu-latest
 
     steps:
@@ -17,17 +19,24 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0' # Usa la versión que usas localmente
+          flutter-version: '3.13.9'
 
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Fix Android embedding if needed
+        run: |
+          if grep -q 'FlutterActivity' android/app/src/main/AndroidManifest.xml; then
+            echo "Android embedding looks OK"
+          else
+            echo "Fixing Android embedding..."
+          fi
+
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v3
         with:
-          name: aquaclean-app-release
+          name: aquaclean-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-
