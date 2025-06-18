@@ -71,19 +71,23 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
 
       if (ph < 7.0) {
         _diagnostico = "pH bajo. Se recomienda subir el pH.";
-        _recomendaciones.add(productosDisponibles.firstWhere((p) => p.id == "pH_up"));
+        _recomendaciones
+            .add(productosDisponibles.firstWhere((p) => p.id == "pH_up"));
       } else if (ph > 7.6) {
         _diagnostico = "pH alto. Se recomienda bajar el pH.";
-        _recomendaciones.add(productosDisponibles.firstWhere((p) => p.id == "pH_down"));
+        _recomendaciones
+            .add(productosDisponibles.firstWhere((p) => p.id == "pH_down"));
       } else {
         _diagnostico = "pH dentro del rango ideal.";
       }
 
       if (ph < 7.0) {
-        _recomendaciones.add(productosDisponibles.firstWhere((p) => p.id == "algicida"));
+        _recomendaciones
+            .add(productosDisponibles.firstWhere((p) => p.id == "algicida"));
       }
       if (ph > 7.6) {
-        _recomendaciones.add(productosDisponibles.firstWhere((p) => p.id == "clarificante"));
+        _recomendaciones.add(
+            productosDisponibles.firstWhere((p) => p.id == "clarificante"));
       }
     });
   }
@@ -125,12 +129,16 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
             ),
             if (_volumen != null) ...[
               const SizedBox(height: 24),
-              Text("Volumen: ${_volumen!.toStringAsFixed(2)} m³", style: const TextStyle(fontSize: 18)),
+              Text("Volumen: ${_volumen!.toStringAsFixed(2)} m³",
+                  style: const TextStyle(fontSize: 18)),
               const SizedBox(height: 8),
-              Text("Diagnóstico: $_diagnostico", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("Diagnóstico: $_diagnostico",
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               if (_recomendaciones.isNotEmpty) ...[
-                const Text("Recomendaciones de productos:", style: TextStyle(fontSize: 16)),
+                const Text("Recomendaciones de productos:",
+                    style: TextStyle(fontSize: 16)),
                 const SizedBox(height: 8),
                 ListView.builder(
                   shrinkWrap: true,
@@ -138,10 +146,12 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
                   itemCount: _recomendaciones.length,
                   itemBuilder: (context, index) {
                     final prod = _recomendaciones[index];
-                    final enCarrito = carrito.productos.any((p) => p.id == prod.id);
+                    final enCarrito =
+                        carrito.productos.any((p) => p.id == prod.id);
                     return Card(
                       child: ListTile(
-                        leading: Image.asset(prod.imagen, width: 50, height: 50, fit: BoxFit.cover),
+                        leading: Image.asset(prod.imagen,
+                            width: 50, height: 50, fit: BoxFit.cover),
                         title: Text(prod.nombre),
                         subtitle: Text(prod.descripcion),
                         trailing: ElevatedButton(
@@ -150,7 +160,9 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
                               : () {
                                   carrito.agregarProducto(prod);
                                   ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(content: Text("${prod.nombre} agregado al carrito")),
+                                    SnackBar(
+                                        content: Text(
+                                            "${prod.nombre} agregado al carrito")),
                                   );
                                 },
                           child: Text(enCarrito ? "Agregado" : "Agregar"),
@@ -173,10 +185,12 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
       child: TextFormField(
         controller: controller,
         keyboardType: const TextInputType.numberWithOptions(decimal: true),
-        decoration: InputDecoration(labelText: label, border: const OutlineInputBorder()),
+        decoration: InputDecoration(
+            labelText: label, border: const OutlineInputBorder()),
         validator: (value) {
           if (value == null || value.isEmpty) return 'Ingrese $label';
-          if (double.tryParse(value) == null) return 'Debe ser un número válido';
+          if (double.tryParse(value) == null)
+            return 'Debe ser un número válido';
           return null;
         },
       ),

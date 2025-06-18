@@ -7,13 +7,13 @@ android {
     namespace 'com.patriciacor.aquaclean'
     compileSdk 33
 
-    defaultConfig {
-    applicationId "com.patriciacor.aquaclean"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
-    }
+  defaultConfig {
+    applicationId "com.patriciacor.aquaclean"  // tu dominio único
+    minSdk 21
+    targetSdk 33
+    versionCode 1
+    versionName "1.0"
+}
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
